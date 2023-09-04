@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:screenvision/homescreen.dart';
 import 'package:screenvision/intro.dart';
 import 'package:screenvision/languages.dart';
 
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        "/":(context)=>Intro(),
+        "/":(context)=>HomeScreen(),
         "/intro":(context)=>Intro(),
         "/languages":(context)=>LanguageScreen(),
+        "/homescreen":(context)=>HomeScreen(),
       },
     );
   }
